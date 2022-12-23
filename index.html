@@ -12,6 +12,7 @@
   <!-- Google Fonts -->
   <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> -->
   <!-- <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> -->
+  <!-- lato -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -31,6 +32,8 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
   <!-- header script -->
   <script>
@@ -248,8 +251,96 @@
 
 
 <!-- page content starts -->
-<section>
+<!-- <section class="video-sec">
+<video playsinline autoplay muted loop>
+    <source src="https://firebasestorage.googleapis.com/v0/b/react-projects-83889.appspot.com/o/Dost%2Fvideo%2Fdost%20video_1.mp4?alt=media&token=26cc6699-a9dc-4657-a98a-b0adffb2885f" type="video/mp4" class="homepage-video">
+</video>
 
+<header class="homepage-hero">
+  
+  
+    <div class="homepage-hero-inner">
+      
+      <h1 class="homepage-hero-headline">Welcome to IIT Madras</h1>
+      <p class="homepage-video-content">Your journey starts here in the 620-acre, biodiverse campus a space that enables you to shape your dreams, connect with the best, and soar to success.<br><br>
+
+        The DoSt Office facilitates your life on campus and beyond.</p>
+      
+      
+    </div>
+    
+  </header>
+</section> -->
+
+<section class="fullsize-video-bg">
+	<div class="inner">
+		<div>
+			<h1 class="homepage-video-headline">Welcome to IIT Madras</h1>
+      <p class="homepage-video-content">Your journey starts here in the 620-acre, biodiverse campus a space that enables you to shape your dreams, connect with the best, and soar to success.<br><br>
+
+        The DoSt Office facilitates your life on campus and beyond.
+		</div>
+	</div>
+	<div id="video-viewport">
+		<video width="1600" height="450" autoplay muted loop>
+			<source src="https://firebasestorage.googleapis.com/v0/b/react-projects-83889.appspot.com/o/Dost%2Fvideo%2Fdost%20video_1.mp4?alt=media&token=26cc6699-a9dc-4657-a98a-b0adffb2885f" type="video/mp4" />
+			<source src="https://firebasestorage.googleapis.com/v0/b/react-projects-83889.appspot.com/o/Dost%2Fvideo%2Fdost%20video_1.mp4?alt=media&token=26cc6699-a9dc-4657-a98a-b0adffb2885f" type="video/webm" />
+		</video>
+	</div>
+</section>
+<!-- video end -->
+
+<section class="Home_sec_2" >
+    <div class="container">    
+    <div class="row">
+        <div class="col-md-6">
+            <h3 class="Happening">Happening Now</h3>
+            <div class="row" style="padding: 10px 0px 10px 0px;">
+                <h6 class="Happening-content">Mess registration opens on 5 August 2022</h6>
+                <ul class="Happening-date-name">
+                    <li class="Happening-date">XX JULY 2022</li>
+                    <li class="Happening-name">REGISTRATIONS</li>
+                </ul>
+            </div>
+            <div class="row" style="padding: 10px 0px 10px 0px;">
+                <h6 class="Happening-content">Lecture on XYZ topic on 17 July 2022</h6>
+                <ul class="Happening-date-name">
+                    <li class="Happening-date">XX JULY 2022</li>
+                    <li class="Happening-name">EVENTS</li>
+                </ul>
+            </div>
+            <div class="row" style="padding: 10px 0px 10px 0px;">
+                <h6 class="Happening-content">Long title for test purposes. IIT Madras wins NIRF Ranking 01 for 2022</h6>
+                <ul class="Happening-date-name">
+                    <li class="Happening-date">XX JULY 2022</li>
+                    <li class="Happening-name">AWARDS</li>
+                </ul>
+            </div>
+            <div class="row" style="padding: 10px 0px 10px 0px;">
+                <h6 class="Happening-content">L–TAP classes announced for July–Nov 2022. Registrations open 22 July</h6>
+                <ul class="Happening-date-name">
+                    <li class="Happening-date">XX JULY 2022</li>
+                    <li class="Happening-name">REGISTRATIONS</li>
+                </ul>
+            </div>
+            <div class="row" style="padding: 10px 0px 10px 0px;">
+                <h6 class="Happening-content">Updated COVID–19 protocol guidelines</h6>
+                <ul class="Happening-date-name">
+                    <li class="Happening-date">XX JULY 2022</li>
+                    <li class="Happening-name">HEALTH</li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-sm-4">
+                    
+                </div>                
+            </div>
+            
+        </div>
+    </div>
+   </div>
 </section>
 
 <!-- page content ends -->
@@ -316,10 +407,14 @@
             <div class="col-md-2 footer-logo">
                 <img src="images/footer/iitm-logo.png" class="logo">
             </div>
-            <div class="col-md-10 footer-logo-content">
+            <div class="col-md-6 footer-logo-content">
                 <h2 class="logo-heading">Office of the Dean (Students)</h2>
                 <h5 class="logo-sub-heading">Indian Institute of Technology Madras<br>
                     Chennai – 600 036, Tamil Nadu</h5>
+            </div>
+            <div class="col-md-4 skillskapes-content">
+                <h2 ><a href="#" class="skillskapes-heading">Designed & Developed by</a></h2>
+                <h5 class="skillskapes-sub-heading">SkillSkapes Pvt Ltd</h5>
             </div>
         </div>
         <div class="row" style="padding: 10px 0px 10px 0px;">
