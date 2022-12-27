@@ -391,7 +391,7 @@ li.dropdown-submenu:hover{
     align-items: flex-end;
     
   }
-  .admission{
+  .admission, .Announcements{
     background: linear-gradient(90deg, #004475 0%, #05645C 100%);
     border-radius: 12px;
     color: #fff !important;
@@ -535,14 +535,14 @@ background-color: rgba(0, 0, 0, 0.650); }
       text-align: left;
     }
     .Happening{
-      font-size: 35px;
-      font-weight: 700;
-      font-family: 'Lato' sans-serif;
+      font-size: 45px;
+      font-weight: 900 !important;
+      font-family: 'Lato', sans-serif !important;
     }
     .Happening-content{
-      font-size: 16px;
-      font-family: 'Lato' sans-serif;
-      font-weight: 300;
+      font-size: 17px;
+      font-family: 'Lato', sans-serif !important;
+      font-weight: 300 !important;
       color: #000;
     }
     .Happening-date-name{
@@ -551,14 +551,169 @@ background-color: rgba(0, 0, 0, 0.650); }
       list-style: none;
     }
     .Happening-date, .Happening-name{
-      font-size: 12px;
-      font-family: 'Lato' sans-serif;
+      font-size: 13px;
+      font-family: 'Lato', sans-serif;
       color: #666666;
       font-weight: 700; 
     }
     .Happening-name{
       text-align: right;
       margin: 0 50px;
+    }
+    .HP-green-bg{
+      background-color:#85F480;
+      text-align: center;
+    }
+    .HP-green-bg:hover{
+      background: #05645C;
+      text-shadow: 0px 0px 10px #AEFB2A;
+    }
+    .HP-green-bg:hover .mess-reg{
+      filter: drop-shadow(0px 0px 10px #AEFB2A);
+    }
+    .HP-green-bg:hover .hp-quicklinks-name-black{
+      color: #fff;
+    }
+
+    .HP-black-bg{
+      background-color: #000;
+      text-align: center;
+    }
+    .HP-black-bg:hover {
+      background-color: #004475;
+      text-shadow: 0px 0px 10px #AEFB2A;
+    }
+    .HP-black-bg:hover .mess-reg{
+      filter: drop-shadow(0px 0px 10px #AEFB2A);
+    }
+
+    .HP-blue-bg{
+      background-color: #57EBDE;
+      text-align: center;
+    }
+    .HP-blue-bg:hover{
+      background-color: #004475;
+      text-shadow: 0px 0px 10px #AEFB2A;
+    }
+    .HP-blue-bg:hover .mess-reg{
+      filter: drop-shadow(0px 0px 10px #AEFB2A);
+    }
+    .HP-blue-bg:hover .hp-quicklinks-name-black{
+      color: #fff;
+    }
+    .Hp-blue, .HP-black, .HP-green{
+      padding: 10px;
+    }
+
+    .hp-quicklinks-name-black{
+      text-align: center;
+      font-size: 18px;
+      padding: 5px;
+      font-family: 'Lato', sans-serif;
+      color: #000;
+      font-weight: 300 !important;
+    }
+    .hp-quicklinks-name-white{
+      text-align: center;
+      font-size: 18px;
+      padding: 5px;
+      font-family: 'Lato', sans-serif;
+      color: #fff;
+      font-weight: 300 !important;
+    }
+    .quick-links:hover .mess-reg {
+      text-shadow: 0px 0px 10px #AEFB2A;
+    }
+    .mess-reg{
+      width: 80%;
+      height: auto;
+      text-align: center;
+      padding: 10px;
+    }
+    .happening-column{
+      padding: 50px 0px 10px 0px ;
+      vertical-align: middle;
+      margin: 0px -60px 0px 60px;
+    }
+    .HP-dean{
+      background: #85F480;
+    }
+    .meet-dean{
+      font-size: 48px;
+      font-family: 'Oswald', sans-serif!important;
+      font-weight: 900 !important ;
+      font-style: normal;
+      text-align: center;
+    }
+    .meet-dean-video{
+      width: 90%;
+    }
+    .meet-dean-content{
+      font-size: 18px;
+      font-family: 'Lato', Sans-serif;
+      font-weight: 300;
+      text-align: left;
+      padding: 10px;
+      color: #000;
+    }
+    .HP-readmore{
+      background: linear-gradient(90deg, #004475 0%, #05645C 100%);
+      border-radius: 12px;
+      color: #fff !important;
+      font-family: 'Lato' sans-serif;
+      font-size: 15px !important;
+      text-transform: uppercase;
+    }
+    .hp-read-more-button{
+      padding: 10px;
+    }
+    .cv19-guidelines{
+      background: #000;
+    }
+    .covid19-guidelines{
+      color: #fff;
+      font-size: 48px;
+      font-family: 'Oswald', sans-serif !important;
+      font-weight: 900 !important;
+      padding: 10px;
+    }
+    .cv19-content{
+      padding: 10px;
+      font-size: 18px;
+      font-weight: 300 !important;
+      font-family: 'Lato', sans-serif;
+      color: #fff;
+
+    }
+    .covid19, .eme-contact{
+      padding: 30px;
+    }
+    .Emergency-contact-title{
+      color: #000;
+      font-size: 48px;
+      font-family: 'Oswald', sans-serif !important;
+      font-weight: 900 !important;
+      padding: 10px;
+    }
+    .contact-details li{
+      padding: 10px;
+      list-style: none;
+      font-size: 18px;
+      color: #000;
+      font-family: 'Lato',sans-serif;
+      font-weight: 300;
+      margin-left: -30px;
+    }
+    .hp-forms{
+      background: #57EBDE;
+    }
+    .get-in-touch{
+      font-size: 17px;
+      color: #000;
+    }
+    .hp-map-main{
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      border-radius: 3px;
     }
 
 
@@ -843,6 +998,7 @@ background-color: rgba(0, 0, 0, 0.650); }
   .hover-box{
     padding: 10px;
   }
+  /* homepage */
   .homepage-video-headline{
     font-size: 20px;
   }
@@ -860,6 +1016,39 @@ background-color: rgba(0, 0, 0, 0.650); }
   .green-heading{
     font-size: 28px;
   }
+  .happening-column{
+    margin: auto;
+    padding: 10px;
+    vertical-align: baseline;
+  }
+  .Happening{
+    font-size: 28px;
+  }
+  .Happening-content{
+    font-size: 15px;
+  }
+  .HP-green-bg, .HP-black-bg, .HP-blue-bg{
+    border-style: solid;
+    border-color: #fff;
+  }
+  .meet-dean-content, .cv19-content, .contact-details li{
+    font-size: 15px;
+  }
+  .meet-dean-video{
+    width: 100%;
+  }
+  .meet-dean, .covid19-guidelines, .Emergency-contact-title{
+    font-size: 32px;
+  }
+  .covid19, .eme-contact{
+    padding: 10px 0px 10px 0px;
+  }
+  .
+  
+
+
+
+
   /* about chennai */
   .chennai-description, .campus-description{
     padding: auto;
@@ -870,6 +1059,7 @@ background-color: rgba(0, 0, 0, 0.650); }
   .Admission-content{
     font-size: 15px;
   }
+  
 }
 
 /* for macbook */
