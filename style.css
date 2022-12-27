@@ -435,6 +435,107 @@ li.dropdown-submenu:hover{
     width: 100%;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   }
+  .Hostel-accommodation{
+    background: #333333;
+  }
+  .hostel-accommodation-content{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 300 !important;
+    font-family: 'Lato', sans-serif;
+    padding: 10px;
+
+  }
+  .hostel-accommodation-content{
+    text-align: left;
+  }
+  .hostel-forms{
+    padding: 10px 10px 10px 10px;
+    
+  }
+  .hostel-forms-title{
+    font-size: 28px;
+    font-family: 'Oswald', sans-serif!important;
+    font-weight: 700 !important;
+    color: #fff;
+    padding: 10px;
+  }
+  .hostel-forms-heading{
+    font-size: 17px;
+    font-family: 'Lato', Sans-serif;
+    font-weight: 700 !important;
+    color: #fff;
+    padding: 10px;
+  }
+  .hostel-forms-lists{
+    color: #fff;
+    font-weight: 300 !important;
+    font-family: 'Lato', Sans-serif;
+    font-size: 17px;
+  }
+  .hostel-forms-content{
+    font-size: 18px;
+    color: #fff;
+    font-weight: 300 !important;
+    font-family: 'Lato', sans-serif;
+    padding: 10px;
+  }
+  .hostel-management{
+    background: linear-gradient(90deg, #004475 0%, #05645C 100%);
+    border-radius: 12px;
+    color: #fff !important;
+    font-family: 'Lato' sans-serif;
+    font-size: 15px !important;
+    text-transform: uppercase;
+  }
+  .hostel-management-button{
+    text-align: left;
+    padding: 10px;
+  }
+  .general-info-title{
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    color: #333;
+    text-align: center;
+  }
+  .general-info-button{
+    text-align: center;
+  }
+  .general-info-description{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 10px;
+  }
+  .general-info-desc{
+    padding: 10px;
+  }
+  .freshers-forum{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+  }
+  .freshers-forum{
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300 !important;
+  }
+  .fresher-social a{
+    background: linear-gradient(180deg, #57EBDE 0%, #AEFB2A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-shadow: 2px 2px 3px rgba(16, 16, 16, 0.075);
+    padding: 10px;
+  }
+  .fresher-social{
+    text-align: center;
+    font-size: 30px;
+    gap: 20px;
+  }
   /* end */
 
   /* About Chennai */
@@ -472,13 +573,92 @@ li.dropdown-submenu:hover{
   }
   .around-campus-img{
     width: 100%;
-  }
-
-  
-
-
-
+  } 
 /* end */
+
+
+/* nearby-accomodations */
+.hero-nearby{
+  background: linear-gradient(#0006, #0006), url(images/header/nearby-header.png);
+  /*   background-image: url(https://source.unsplash.com/2600x1200?city); */
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+  /*   background-color: #eee; */
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+
+}
+.hotels{
+  position: relative;
+  width: 100%;
+}
+.Hotel-img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.hotel-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 48.77%);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+.hotels:hover .hotel-overlay {
+  height: 100%;
+}
+.na{
+font-family: 'Oswald', sans-serif;
+color:#fff;
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+}
+.neraby-content{
+  font-family: "Lato",Sans-serif;;
+  color:#000;
+  font-size: 18px;
+  font-weight: 350  !important;
+ }
+.hotel-text {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 40%;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+  text-align: left;
+  padding: 20px;
+  
+}
+.hotel-text p{
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+.hotel-img-list{
+  padding: 10px;
+}
+.nb-img{
+  width: 100%;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 1px 1px 4px;
+}
+.hotel-partners{
+  padding: 10px;
+}
+
+/* end  */
 
 
   /* Homepage */
@@ -933,7 +1113,7 @@ background-color: rgba(0, 0, 0, 0.650); }
 /* skillskapes footer content */
  .skillskapes-content{
   text-align: center;
-  padding-top:25px;
+  padding-top:15px;
  }
   .skillskapes-heading{
     font-size: 12px;
@@ -1043,23 +1223,34 @@ background-color: rgba(0, 0, 0, 0.650); }
   .covid19, .eme-contact{
     padding: 10px 0px 10px 0px;
   }
-  .
-  
-
-
-
 
   /* about chennai */
   .chennai-description, .campus-description{
     padding: auto;
-    font-size: 15px;
+    font-size: 15px !important;
     margin: auto;
   }
   /* new-students */
   .Admission-content{
     font-size: 15px;
   }
-  
+  .hostel-accommodation-content, .general-info-description, .freshers-forum{
+    font-size: 15px;
+  }
+  .fresher-social{
+    font-size: 25px;
+  }
+
+  /* nearby-hotel */
+  .neraby-content{
+    font-size: 15px;
+  }
+  .hotel-text{
+    font-size: 20px;
+  }
+  .hotel-text p{
+    font-size: 16px;
+  }
 }
 
 /* for macbook */

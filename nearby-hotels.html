@@ -5,17 +5,21 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Homepage</title>
+  <title>Nearby Hotels</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Google Fonts -->
   <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> -->
   <!-- <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> -->
-  <!-- lato -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+   
+  <!-- oswald-fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -29,22 +33,6 @@
   <link href="style.css" rel="stylesheet">
   <!-- Customized Bootstrap Stylesheet -->
   <link href="Customized bootstrap/bootstrap.min.css" rel="stylesheet">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-  <!-- header script -->
-  <script>
-    $(document).ready(function(){
-      $('.dropdown-submenu a.test').on("click", function(e){
-        $(this).next('ul').toggle();
-        e.stopPropagation();
-        e.preventDefault();
-      });
-    });
-    </script>
 
   <!-- JS to call Header & footer (starts) -->
   <script
@@ -68,7 +56,7 @@
   <!-- nav bar starts -->
 
 <!-- Topbar Start -->
- <div class="container-fluid px-0 d-none d-lg-block">
+<div class="container-fluid px-0 d-none d-lg-block">
     <div class="row gx-0" style="padding: 0px 0px 0px 0px; background-color: #000;">
         <div class="col-lg-4 text-center border-inner-0 py-3">
             <div class="d-inline-flex align-items-center justify-content-center">
@@ -79,7 +67,7 @@
         </div>
         <div class="col-lg-2 text-center py-3">
             <div class="d-inline-flex align-items-center justify-content-center">
-                <i class="bi bi-chat fs-1 text-primary me-3"></i>
+                <i class="bi bi-chat fs-1 top-header-icon me-3"></i>
                 <div class="text-start">
                     <h6 class="text-capitalize mb-1 top-bar-heading">Confidential Box</h6>                        
                 </div>
@@ -88,7 +76,7 @@
         
         <div class="col-lg-2 text-center py-3">
             <div class="d-inline-flex align-items-center justify-content-center">
-                <i class="bi bi-person-plus fs-1 text-primary me-3"></i>
+                <i class="bi bi-person-plus fs-1 top-header-icon me-3"></i>
                 <div class="text-start">
                     <h6 class="text-capitalize mb-1 top-bar-heading">Sign Up</h6>
                 </div>
@@ -97,7 +85,7 @@
 
         <div class="col-lg-2 text-center py-3">
             <div class="d-inline-flex align-items-center justify-content-center">
-                <i class="bi bi-box-arrow-in-right fs-1 text-primary me-3"></i>
+                <i class="bi bi-box-arrow-in-right fs-1 top-header-icon me-3"></i>
                 <div class="text-start">
                     <h6 class="text-capitalize mb-1 top-bar-heading">Login</h6>                        
                 </div>
@@ -106,7 +94,7 @@
 
         <div class="col-lg-2 text-center py-3">
             <div class="d-inline-flex align-items-center justify-content-center">
-                <i class="bi bi-search fs-1 text-primary me-3"></i>
+                <i class="bi bi-search fs-1 top-header-icon me-3"></i>
                 <div class="text-start">
                     <h6 class="text-capitalize mb-1 top-bar-heading">Search</h6>                      
                 </div>
@@ -244,313 +232,210 @@
             </div>
         </div>
     </div>
-</nav>
+  </nav>
 <!-- Navbar End -->
 
 <!-- nav bar ends -->
 
 
 <!-- page content starts -->
-<!-- <section class="video-sec">
-<video playsinline autoplay muted loop>
-    <source src="https://firebasestorage.googleapis.com/v0/b/react-projects-83889.appspot.com/o/Dost%2Fvideo%2Fdost%20video_1.mp4?alt=media&token=26cc6699-a9dc-4657-a98a-b0adffb2885f" type="video/mp4" class="homepage-video">
-</video>
-
-<header class="homepage-hero">
+<header class="hero-nearby">
   
   
-    <div class="homepage-hero-inner">
+    <div class="hero-inner">
       
-      <h1 class="homepage-hero-headline">Welcome to IIT Madras</h1>
-      <p class="homepage-video-content">Your journey starts here in the 620-acre, biodiverse campus a space that enables you to shape your dreams, connect with the best, and soar to success.<br><br>
-
-        The DoSt Office facilitates your life on campus and beyond.</p>
-      
+      <h1 class="hero-headline">Nearby Accomodations</h1>
       
     </div>
-    
-  </header>
-</section> -->
 
-<section class="fullsize-video-bg">
-	<div class="inner">
-		<div>
-			<h1 class="homepage-video-headline">Welcome to IIT Madras</h1>
-      <p class="homepage-video-content">Your journey starts here in the 620-acre, biodiverse campus a space that enables you to shape your dreams, connect with the best, and soar to success.<br><br>
+</header>
 
-        The DoSt Office facilitates your life on campus and beyond.
-		</div>
-	</div>
-	<div id="video-viewport">
-		<video width="1600" height="450" autoplay muted loop>
-			<source src="https://firebasestorage.googleapis.com/v0/b/react-projects-83889.appspot.com/o/Dost%2Fvideo%2Fdost%20video_1.mp4?alt=media&token=26cc6699-a9dc-4657-a98a-b0adffb2885f" type="video/mp4" />
-			<source src="https://firebasestorage.googleapis.com/v0/b/react-projects-83889.appspot.com/o/Dost%2Fvideo%2Fdost%20video_1.mp4?alt=media&token=26cc6699-a9dc-4657-a98a-b0adffb2885f" type="video/webm" />
-		</video>
-	</div>
-</section>
-<!-- video end -->
-
-<section class="Home_sec_2" >
-    <div class="container" style="max-width: 1600px;">    
-    <div class="row" style="padding: 0;">
-        <div class="col-md-6 happening-column">
-            <h3 class="Happening">Happening Now</h3>
-            <div class="row" style="padding: 10px 0px 10px 0px;">
-                <h6 class="Happening-content">Mess registration opens on 5 August 2022</h6>
-                <ul class="Happening-date-name">
-                    <li class="Happening-date">XX JULY 2022</li>
-                    <li class="Happening-name">REGISTRATIONS</li>
-                </ul>
-            </div>
-            <div class="row" style="padding: 10px 0px 10px 0px;">
-                <h6 class="Happening-content">Lecture on XYZ topic on 17 July 2022</h6>
-                <ul class="Happening-date-name">
-                    <li class="Happening-date">XX JULY 2022</li>
-                    <li class="Happening-name">EVENTS</li>
-                </ul>
-            </div>
-            <div class="row" style="padding: 10px 0px 10px 0px;">
-                <h6 class="Happening-content">Long title for test purposes. IIT Madras wins NIRF Ranking 01 for 2022</h6>
-                <ul class="Happening-date-name">
-                    <li class="Happening-date">XX JULY 2022</li>
-                    <li class="Happening-name">AWARDS</li>
-                </ul>
-            </div>
-            <div class="row" style="padding: 10px 0px 10px 0px;">
-                <h6 class="Happening-content">L–TAP classes announced for July–Nov 2022. Registrations open 22 July</h6>
-                <ul class="Happening-date-name">
-                    <li class="Happening-date">XX JULY 2022</li>
-                    <li class="Happening-name">REGISTRATIONS</li>
-                </ul>
-            </div>
-            <div class="row" style="padding: 10px 0px 10px 0px;">
-                <h6 class="Happening-content">Updated COVID–19 protocol guidelines</h6>
-                <ul class="Happening-date-name">
-                    <li class="Happening-date">XX JULY 2022</li>
-                    <li class="Happening-name">HEALTH</li>
-                </ul>
-            </div>
-            <div class="row" style="padding: 10px 0px 10px 0px;">
-                <div class="hp-announcement-button">
-                    <a href="#">
-                    <button type="button" class="btn Announcements">All Announcements</button>
-                </a>            
-                </div> 
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="row" style="padding: 0px;">
-                <div class="col-sm-4 HP-green-bg" style="padding: 0px;">
-                    <div class="HP-green">
-                        <a href="#">
-                        <img src="images/page-images/icons/mess-reg.svg" alt="mess-reg" class="mess-reg">
-                        <h5 class="hp-quicklinks-name-black">Mess Registration</h5>
-                        </a>
-                    </div>                    
-                </div>
-                <div class="col-sm-4 HP-black-bg" style="padding: 0px;">
-                    <div class="HP-black">
-                        <a href="#">
-                        <img src="images/page-images/icons/Gymkhana.svg" alt="mess-reg" class="mess-reg">
-                        <h5 class="hp-quicklinks-name-white">Gymkhana Registration</h5>
-                    </a>
-                    </div>                    
-                </div>
-                <div class="col-sm-4 HP-blue-bg" style="padding: 0px;">
-                    <div class="HP-blue">
-                        <a href="#">
-                        <img src="images/page-images/icons/Day-scholar.svg" alt="mess-reg" class="mess-reg">
-                        <h5 class="hp-quicklinks-name-black">Day Scholar Form</h5>
-                    </a>
-                    </div>                    
-                </div>                
-            </div>
-            <div class="row" style="padding: 0px;">
-                <div class="col-sm-4 HP-blue-bg" style="padding: 0px;">
-                    <div class="HP-blue">
-                        <a href="#">
-                        <img src="images/page-images/icons/Venues.svg" alt="mess-reg" class="mess-reg">
-                        <h5 class="hp-quicklinks-name-black">Book Venues & Buses</h5>
-                    </a>
-                    </div>                    
-                </div>
-                <div class="col-sm-4 HP-green-bg" style="padding: 0px;">
-                    <div class="HP-green">
-                        <a href="#">
-                        <img src="images/page-images/icons/LCD.svg" alt="mess-reg" class="mess-reg">
-                        <h5 class="hp-quicklinks-name-black">Submit Posters for LCD Screens</h5>
-                    </a>
-                    </div>                    
-                </div>
-                <div class="col-sm-4 HP-black-bg" style="padding: 0px;">
-                    <div class="HP-black">
-                        <a href="#">
-                        <img src="images/page-images/icons/Stores.svg" alt="mess-reg" class="mess-reg">
-                        <h5 class="hp-quicklinks-name-white">Stores & Restaurant Feedback</h5>
-                    </a>
-                    </div>                    
-                </div>                
-            </div>
-            <div class="row" style="padding: 0px;">
-                <div class="col-sm-4 HP-black-bg" style="padding: 0px;">
-                    <div class="HP-black">
-                        <a href="#">
-                        <img src="images/page-images/icons/L-tap.svg" alt="mess-reg" class="mess-reg">
-                        <h5 class="hp-quicklinks-name-white">L-TAP Courses</h5>
-                    </a>
-                    </div>                    
-                </div>
-                <div class="col-sm-4 HP-blue-bg" style="padding: 0px;">
-                    <div class="HP-blue">
-                        <a href="#">
-                        <img src="images/page-images/icons/St-election.svg" alt="mess-reg" class="mess-reg">
-                        <h5 class="hp-quicklinks-name-black">Student Elections</h5>
-                    </a>
-                    </div>                    
-                </div>
-                <div class="col-sm-4 HP-green-bg" style="padding: 0px;">
-                    <div class="HP-green">
-                        <a href="#">
-                        <img src="images/page-images/icons/Anti-ragging.svg" alt="mess-reg" class="mess-reg">
-                        <h5 class="hp-quicklinks-name-black">Anti-ragging Policy</h5>
-                    </a>
-                    </div>                    
-                </div>                
-            </div>
-            
-        </div>
-    </div>
-   </div>
-</section>
-
-<section class="HP-dean">
+<section class="Hotel">
     <div class="container">
-        <div class="row" style="padding: 40px 0px 25px 0px;">
-            <div class="col-md-12">
-                <h2 class="meet-dean">Meet the Dean</h2>
+        <div class="row" style="padding: 30px 0px 10px 0px;">
+            <div class="hotels-list">
+            <div class="nearby">
+                <p class="neraby-content">This is a list of hotels near the IIT Madras campus for the convenience of parents, guardians, and others accompanying students to the campus. Please consult with the respective hotels or service providers for accommodation availability, rates, and bookings.</p>   
             </div>
-        </div>
-        
-        <div class="row" style="padding: 20px 0px 50px 0px;">
-            <div class="col-md-6">
-                <img src="images/page-images/njvasa.png" alt="dean" class="meet-dean-video">
+            <div class="row" style="padding: 20px 0px 5px 0px;">
+                <div class="col-md-4 hotel-img-list">
+                    <div class="hotels">
+                        <img src="images/nearby/image01.png" alt="Avatar" class="Hotel-img">
+                            <div class="hotel-overlay">
+                                <div class="hotel-text"><h3 class="na">Kohinoor Asiana
+                                </h3>
+                                <p> 1/238, Old Mahabalipuram Road (OMR),
+                                    Semmencherry, Chennai, Tamil Nadu 600 119
+                                    Phone: +91 44 6741 1000
+                                    Fax: +91 44 674 11 999</p>
+                                    
+                                     </div>
+                            </div>
+                    </div>
+                </div>
 
-            </div>
-            <div class="col-md-6 hp-meet-dean">
-                <p class="meet-dean-content">Prof. Nilesh J Vasa has been serving as Dean (Students) since 2020. He is a faculty in the department of Engineering Design and his research focuses on laser applications. He holds a Doctorate in Engineering from Kyushu University, Fukoka.<br><br>
-
-                    In his capacity as Dean (Students), Prof. Vasa is responsible for the administration of hostels, student cultural and sports activities, and many other facilities.<br><br>
+                <div class="col-md-4 hotel-img-list">
+                    <div class="hotels">
+                        <img src="images/nearby/image3.png" alt="Avatar" class="Hotel-img">
+                            <div class="hotel-overlay">
+                                <div class="hotel-text"><h3 class="na">Lemon Tree Hotel, Chennai</h3>
+                                <p >72, Sardar Patel Road,
+                                    Guindy, Chennai, Tamil Nadu 600 032
+                                    +91 96000 58767 </p>
                     
-                    [Add something about his availability/approachability for any student needs?]
-                    </p>
-                    <div class="hp-read-more-button">
-                        <a href="#">
-                        <button type="button" class="btn HP-readmore">Read More</button>
-                    </a>            
-                    </div> 
+                </div>
+                     </div>
+                    </div>
+                    </div>
 
-
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section class="covid19-contacts">
-    <div class="container" style="max-width: 1600px;">
-        <div class="row" style="padding: 0;">
-            <div class="col-md-6 cv19-guidelines">
-                <div class="covid19">
-                    <h3 class="covid19-guidelines">COVID–19 Guidelines</h3>
-                    <p class="cv19-content">IIT Madras has implemented a rigorous COVID-19 protocol for the safety of its students, researchers, faculty, and support staff.
-<br><br>
-                        Read about our protocol and our opening timetable here:</p>
-                        <div class="hp-read-more-button">
-                            <a href="#">
-                            <button type="button" class="btn HP-readmore">Institute COVID–19 Protocol</button>
-                        </a>            
-                        </div> 
-                        <p class="cv19-content">Play an interactive game themed around the precautions against COVID–19.</p>
-                        <div class="hp-read-more-button">
-                            <a href="#">
-                            <button type="button" class="btn HP-readmore">Play Game</button>
-                        </a>            
-                        </div>
-                        <div class="hp-read-more-button">
-                            <a href="#">
-                            <button type="button" class="btn HP-readmore">Demo Video</button>
-                        </a>            
-                        </div>
-                </div>       
-            </div>
-            <div class="col-md-6">
-                <div class="eme-contact">
-                    <h3 class="Emergency-contact-title">Emergency Contacts</h3>
-                    <div class="contact-details">
-                        <ul>
-                            <li>Security: +91 44 2257 8260</li>
-                            <li>Hospital: +91 44 2257 8330</li> 
-                            <li>Ambulance: +91 44 2257 8333/8888</li> 
-                            <li>For Animals: +91 44 2257 8051</li> 
-                            <li>Counselling: +91 44 2257 5555</li>
-                        </ul>
+                    <div class="col-md-4 hotel-img-list">
+                        <div class="hotels">
+                            <img src="images/nearby/image4.png" alt="Avatar" class="Hotel-img">
+                                <div class="hotel-overlay">
+                                    <div class="hotel-text"><h3 class="na">The Checkers</h3>
+                                    <p >30, Anna Salai, Little Mount,
+                                        Saidapet, Chennai, Tamil Nadu 600 015
+                                        +91 44 4399 4399
+                                         </p>
                     </div>
                 </div>
             </div>
-        </div>
-        </div>    
-</section>
-
-<section class="hp-forms">
-    <div class="container">
-        <!-- <div class="row">
-            <div class="col-md-6">
-                <div class="suggestion-box">
-                    <h4 class="suggestion-form-title">Suggestion Box</h4>
-                    <p class="suggestion-form-content">If you have feedback or suggestions about administrative processes, please let us know here.</p>
-
-                    <form action="/action_page.php">
-                        <label for="name">Name:</label><br>
-                        <input type="text" id="name" name="name" placeholder="John"><br>
-                        <label for="RollNumber">RollNo:</label>  
-                        <input type="number" id="RollNumber" name="RollNumber"/><br/>
-                        <label for="email">Email: </label>  
-                        <input type="email" id="email" name="email"/><br/>  
-                        <input type="submit" value="Submit">
-                      </form>
-
-                </div>
+            </div>
 
             </div>
-        </div>   -->
-
-        <div class="row">
-            <div class="col-md-12">
-                <div class="eme-contact">
-                    <h3 class="Emergency-contact-title">Get in Touch</h3>
-                    <p class="get-in-touch">The Office of the Dean (Students) is open from [X.XX am] to [Y.YY pm] from Mondays to [FRI/SAT].<br><br>
-
-                        <b>Phone:</b> (+91) 44 2257 8050<br>
-                        <b>Email:</b> dostoffice@iitm.ac.in
-                    </p>
-
+            <div class="row" style="padding: 10px 0px 5px 0px;">
+                <div class="col-md-4 hotel-img-list">
+                    <div class="hotels">
+                        <img src="images/nearby/image5.png" alt="Avatar" class="Hotel-img">
+                            <div class="hotel-overlay">
+                                <div class="hotel-text"><h3 class="na">Raj Park Chennai
+                                </h3>
+                                <p >180, TT Krishnamachari Road,
+                                    Alwarpet, Chennai, Tamil Nadu 600 018
+                                    +91 44 4225 7777 </p>
+                                    
+                                     </div>
+                            </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-12">
-                <div class="hp-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15550.817974158075!2d80.22603841370845!3d12.990742868000408!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd0d9bd8389b298f2!2sDean%20of%20students%20office!5e0!3m2!1sen!2sin!4v1672117858197!5m2!1sen!2sin" width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="hp-map-main"></iframe>
-
+        
+                <div class="col-md-4 hotel-img-list">
+                    <div class="hotels">
+                        <img src="images/nearby/image1.png" alt="Avatar" class="Hotel-img">
+                            <div class="hotel-overlay">
+                                <div class="hotel-text"><h3 class="na">Rainbow Hotels & Service Apartments</h3>
+                                <p> 10, CV Raman Road,
+                                    Alwarpet, Chennai – 600 018
+                                    +91 44 2499 9000 / 90030 39000</p>
+                    
+                </div>
+                     </div>
+                    </div>
+                    </div>
+                <div class="col-md-4 hotel-img-list">
+                    <div class="hotels">
+                        <img src="images/nearby/image6.png" alt="Avatar" class="Hotel-img">
+                            <div class="hotel-overlay">
+                                <div class="hotel-text"><h3  class="na">Ginger Chennai (Tharamani, IITM)</h3>
+                                <p>11th floor, IITM Research Park, Behind Tidal Park,
+                                    Tharamani, Chennai, Tamil Nadu 600113
+                                    +91 44 6666 3333 / +91 92822 17989
+                                     </p>
                 </div>
             </div>
         </div>
+        </div>
+        
+            </div>
+            <div class="row" style="padding: 10px 0px 5px 0px;">
+                <div class="col-md-4 hotel-img-list">
+                    <div class="hotels">
+                        <img src="images/nearby/image7.png" alt="Avatar" class="Hotel-img">
+                            <div class="hotel-overlay">
+                                <div class="hotel-text"><h3 class="na">Ramada Plaza Chennai</h3>
+                                <p>  36, Sardar Patel Road,
+                                    Guindy, Chennai, Tamil Nadu 600 032
+                                    +91 44 4565 3333</p>
+                                    
+                                     </div>
+                            </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-4 hotel-img-list">
+                    <div class="hotels">
+                        <img src="images/nearby/image8.png" alt="Avatar" class="Hotel-img">
+                            <div class="hotel-overlay">
+                                <div class="hotel-text"><h3 class="na">Quality Hotel Sabari Classic </h3>
+                                    <p>33, Rajiv Gandhi Salai (OMR),
+                                    Navalur, Chennai, Tamil Nadu 603 103.
+                                    +91 44 4744 5000
+                                     </p>
+                    
+                </div>
+                     </div>
+                    </div>
+                    </div>
+                <div class="col-md-4 hotel-img-list">
+                    <div class="hotels">
+                        <img src="images/nearby/image9.png" alt="Avatar" class="Hotel-img">
+                            <div class="hotel-overlay">
+                                <div class="hotel-text"><h3 class="na">The Raintree, St Mary's Road </h3>
+                                <p>120, St Mary’s Road,
+                                    Alwarpet, Chennai, Tamil Nadu 600 018
+                                    +91 44 4225 2525
+                                     </p>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+            </div>
+        </div>
+           
     </div>
+
+    <div class="row" style="padding: 20px 0px 20px 0px;">
+        <div class="col-md-12">
+            <div class="common-green-heading">
+                <h3 class="green-heading">Online Sources For Accomodation</h3>
+              </div>
+
+
+    </div>
+</div>
+
+<div class="hotel-partners">
+
+<div class="row" style="padding: 10px 0px 30px 0px;">
+    <div class="col-md-2">
+        <img src="images/nearby/Group99.png" alt="Avatar" class="nb-img">
+
+</div>
+<div class="col-md-2">
+    <img src="images/nearby/Group102.png" alt="Avatar" class="nb-img">
+</div>
+<div class="col-md-2">
+    <img src="images/nearby/Group103.png" alt="Avatar" class="nb-img">
+</div>
+<div class="col-md-2">
+    <img src="images/nearby/Group100.png" alt="Avatar" class="nb-img">
+</div>
+<div class="col-md-2">
+    <img src="images/nearby/Group101.png" alt="Avatar" class="nb-img">
+</div>
+<div class="col-md-2">
+    <img src="images/nearby/Group104.png" alt="Avatar" class="nb-img">
+</div>
+</div>
+
+</div>
+
+    </div>
+
 </section>
 
-<!-- page content ends -->
-  
-
-
-
+ 
   <!-- footer starts -->
 
   <section class="footer-hero">
@@ -610,15 +495,10 @@
             <div class="col-md-2 footer-logo">
                 <img src="images/footer/iitm-logo.png" class="logo">
             </div>
-            <div class="col-md-6 footer-logo-content">
+            <div class="col-md-10 footer-logo-content">
                 <h2 class="logo-heading">Office of the Dean (Students)</h2>
                 <h5 class="logo-sub-heading">Indian Institute of Technology Madras<br>
                     Chennai – 600 036, Tamil Nadu</h5>
-            </div>
-            <div class="col-md-4 skillskapes-content">
-                <h2 ><a href="#" class="skillskapes-heading">Designed & Developed by</a></h2>
-                <h5 class="skillskapes-sub-heading"><a href="https://www.skillskapes.com/" target="_blank" class="skillskapes-sub-heading">SkillSkapes</a></h5>
-                <h5 class="skillskapes-contact">IITM-RP,&nbsp;&nbsp;<a href="mailto:getinfo@skillskapes.com" class="Sk-contact">getinfo@skillskapes.com</a></h5>
             </div>
         </div>
         <div class="row" style="padding: 10px 0px 10px 0px;">
